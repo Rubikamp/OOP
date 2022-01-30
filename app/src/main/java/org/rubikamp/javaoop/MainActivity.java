@@ -1,7 +1,6 @@
 package org.rubikamp.javaoop;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,18 +13,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Three three = new Three();
-        three.threeFun();
+//        GrandPa grandPa = new GrandPa();
+//        grandPa.showGrandfatherHeight();
+//        grandPa.showGrandfatherSkinColor();
+//        grandPa.showGrandfatherBaldness();
+//        grandPa.showGrandfatherBehavior();
+//        grandPa.showGrandfatherCreativity();
+//        grandPa.showGrandfatherNationality();
+//        grandPa.showGrandfatherActivity();
 
-        One one = new Two();
+//        Papa papa = new Papa();
+//        papa.showGrandfatherActivity();
+//        papa.showGrandfatherHeight();
+//        papa.showGrandfatherSkinColor();
+//        papa.showGrandfatherBaldness();
+//        papa.showGrandfatherBehavior();
+//        papa.showGrandfatherCreativity();
+//        papa.showGrandfatherActivity();
+//        papa.showGrandfatherNationality();
+//        papa.showFatherEducation();
+//        papa.showFatherStudyTime();
 
-        One one1 = new Three();
-
-        one1.setCount(5);
-
-        one1.setCount(10);
-
-        Log.i(TAG, "onCreate: " + one.getCount());
-        
+        Son sonObject = new Son();
+        sonObject.showGrandfatherHeight();
+        sonObject.showGrandfatherSkinColor();
+        sonObject.showGrandfatherBaldness();
+        sonObject.showGrandfatherBehavior();
+        sonObject.showGrandfatherCreativity();
+        sonObject.showGrandfatherActivity();
+        sonObject.showGrandfatherNationality();
+        sonObject.showFatherEducation();
+        sonObject.showFatherStudyTime();
     }
 }
