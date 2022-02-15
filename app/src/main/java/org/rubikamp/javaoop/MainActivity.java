@@ -1,6 +1,7 @@
 package org.rubikamp.javaoop;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,41 +9,21 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        GrandPa grandPa = new GrandPa();
-//        grandPa.showGrandfatherHeight();
-//        grandPa.showGrandfatherSkinColor();
-//        grandPa.showGrandfatherBaldness();
-//        grandPa.showGrandfatherBehavior();
-//        grandPa.showGrandfatherCreativity();
-//        grandPa.showGrandfatherNationality();
-//        grandPa.showGrandfatherActivity();
+        Athlete athlete1 = new Athlete("MR", "Fekri", 1386);
+        athlete1.showAthleteInfo();
+        Athlete athlete2 = new Athlete("Hast", "Mhmdi", 1385);
+        athlete2.showAthleteInfo();
+        Athlete athlete3 = new Athlete("Sana", "Ebadi", 1375);
+        athlete3.showAthleteInfo();
 
-//        Papa papa = new Papa();
-//        papa.showGrandfatherActivity();
-//        papa.showGrandfatherHeight();
-//        papa.showGrandfatherSkinColor();
-//        papa.showGrandfatherBaldness();
-//        papa.showGrandfatherBehavior();
-//        papa.showGrandfatherCreativity();
-//        papa.showGrandfatherActivity();
-//        papa.showGrandfatherNationality();
-//        papa.showFatherEducation();
-//        papa.showFatherStudyTime();
+        System.out.println("The number of all registrations is " + Athlete.showAllAthletes());
 
-        Son sonObject = new Son();
-        sonObject.showGrandfatherHeight();
-        sonObject.showGrandfatherSkinColor();
-        sonObject.showGrandfatherBaldness();
-        sonObject.showGrandfatherBehavior();
-        sonObject.showGrandfatherCreativity();
-        sonObject.showGrandfatherActivity();
-        sonObject.showGrandfatherNationality();
-        sonObject.showFatherEducation();
-        sonObject.showFatherStudyTime();
+
     }
 }
